@@ -40,4 +40,8 @@ if __name__ == '__main__':
     sol = Solution()
     num = [2, 7, 11, 15]
     target = 9
-    print sol.twoSum(num, target)
+
+    expected = (1, 2)
+    result = sol.twoSum(num, target)
+    assert expected == result
+    print result
